@@ -1,6 +1,0 @@
-com\example\resttemplate\RestTemplateApplicationTests.class
-com\example\resttemplate\model\RequestPayloadTest.class
-com\example\resttemplate\config\RestTemplateConfigTest.class
-com\example\resttemplate\service\ApiServiceTest.class
-com\example\resttemplate\model\ResponsePayloadTest.class
-com\example\resttemplate\controller\ApiControllerTest.class

@@ -15,10 +15,12 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
+/**
+ * Test class for {@link ApiController}.
+ * This class contains unit tests to verify the functionality of the API controller.
+ */
 public class ApiControllerTest {
 
     private MockMvc mockMvc;
@@ -35,6 +37,9 @@ public class ApiControllerTest {
         mockMvc = MockMvcBuilders.standaloneSetup(apiController).build();
     }
 
+    /**
+     * Test to verify the `/api/send-data` endpoint.
+     */
     @Test
     public void testSendData() throws Exception {
         RequestPayload requestPayload = new RequestPayload();

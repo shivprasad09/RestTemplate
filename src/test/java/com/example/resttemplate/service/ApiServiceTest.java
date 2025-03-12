@@ -7,18 +7,17 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.when;
 
+/**
+ * Test class for {@link ApiService}.
+ * This class contains unit tests to verify the functionality of the API service.
+ */
 public class ApiServiceTest {
 
     @Mock
@@ -32,6 +31,9 @@ public class ApiServiceTest {
         MockitoAnnotations.openMocks(this);
     }
 
+    /**
+     * Test to verify the sendPostRequest method.
+     */
     @Test
     public void testSendPostRequest() {
         RequestPayload requestPayload = new RequestPayload();
