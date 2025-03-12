@@ -1,0 +1,7 @@
+com\example\resttemplate\config\RestTemplateConfig.class
+com\example\resttemplate\RestTemplateApplication.class
+com\example\resttemplate\model\ResponsePayload$Detail.class
+com\example\resttemplate\controller\ApiController.class
+com\example\resttemplate\service\ApiService.class
+com\example\resttemplate\model\ResponsePayload.class
+com\example\resttemplate\model\RequestPayload.class
